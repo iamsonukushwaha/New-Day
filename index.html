@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Day</title>
+        <style>
+            body{
+                margin: 24px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <p id="demo"></p>
+
+        <script>
+            function newDay() {
+
+                const demo = document.getElementById('demo');
+                const day = new Date();
+                // console.log(day);
+                demo.textContent = day;
+
+                //  this give date one day before 😍
+
+                // var msec = Date.parse(day);
+                // var y = msec - 86400000;
+                // var d = new Date(y);
+                // console.log(d);
+                // demo.textContent = d;
+            }
+
+            setInterval(newDay, 1000);
+        </script>
+    </body>
+
+</html>
